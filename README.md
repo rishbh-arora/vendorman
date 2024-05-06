@@ -47,8 +47,8 @@ For the test suite, we use the POSTMAN API testing service.
     <br>
 
 4.  Finally, start the server:
-    For developement server: `python manage.py runserver`
-    For Production server: `gunicorn newsapi.wsgi`
+    - For developement server: `python manage.py runserver`
+    - For Production server: `gunicorn newsapi.wsgi`
 
 # Endpoints
 
