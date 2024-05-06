@@ -1,5 +1,18 @@
 # Vendor managemenet System
 
+# Check it out
+
+For the test suite, we use the POSTMAN API testing service.
+
+- Fork the POSTMAN Workspace https://elements.getpostman.com/redirect?entityId=27819667-61899d84-4072-47a1-a307-dea3416c21c0&entityType=collection
+
+- Set the base_url attribute in the environment variables of POSTMAN. This will act as the API's base endpoint upon which all request URLs extend. Default = http://127.0.0.1:8000/api (localhost, developement server)
+
+- During setup, `django_admin_username` and `django_admin_password` are set in the environment variables. Use these credencials to obtain authentication token through the `POST Obtain Auth Token` request in User folder. Save the token recieved in response body as `token` environment variable in POSTMAN
+
+- You're good to go!
+  Check furthur documentations for all endpoints. Authorization header is added to all requests which require authentication and will automatically use the authorization token you have set in POSTMAN environment.
+
 # Setup
 
 1.  Clone the repository:
