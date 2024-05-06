@@ -39,10 +39,13 @@ For the test suite, we use the POSTMAN API testing service.
       <br>
 
 3.  Depending on your enviroment, run the build command:
-    Linux/Mac: `chmod +x setup.sh && ./setup.sh`
-    Windows: `setup.bat`
+
+    - Linux/Mac: `chmod +x setup.sh && ./setup.sh`
+    - Windows: `setup.bat`
+
     The Build command handles generating migrations, migrating and making the admin superuser using the environment variables set. **Make sure that your connected database does not contain any data/tables before running build command for a fresh migration**
     <br>
+
 4.  Finally, start the server:
     For developement server: `python manage.py runserver`
     For Production server: `gunicorn newsapi.wsgi`
