@@ -17,7 +17,7 @@ class DenyManualMetrics(permissions.BasePermission):
 class AttributePermissions(permissions.BasePermission):
 
     def has_permission(self, request, view):
-        attrs = ["issue_date", "acknowledgement_date"]
+        attrs = ["issue_date", "acknowledgement_date", "on_time"]
         for attr in attrs:
             if attr in request.data :
                 raise PermissionDenied(detail=f"{attr} cannot be set manually")
